@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Login Page</title>
+</head>
+<body>
+  <div class="container">
+    <div class="left-grid">
+      <h1>HEALTHY <span class="black-text">NEWS.</span></h1>
+    </div>
+    <div class="right-grid">
+      <form id="loginForm" action="javascript:void(0);">
+        <h2>Login</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Type your username" required>
+        
+        <label for="password">Password:</label>
+        <div class="password-container">
+          <input type="password" id="password" name="password" placeholder="Type your password" required>
+          <span class="toggle-password" onclick="togglePasswordVisibility()"></span>
+        </div>
+
+        <div id="loginResult" class="login-result"></div> 
+        <div class="forgot-password">
+          <a href="#">Forgot Password?</a>
+        </div>
+        
+        <div class="button-login">
+          <button type="button" onclick="login()">Login</button>
+        </div>
+        <div class="login-options">
+          <button id="button-Gmail" type="button">Login with Gmail</button>
+        </div>
+        <div class="login-two">
+          <button id="button-Facebook" type="button">Login with Facebook</button>
+        </div>
+        
+        <div class="signup-link">
+          Don't have an account? <a href="#">Sign Up Here</a>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+</body>
+</html>
